@@ -38,6 +38,7 @@ app.use('/user', userRoutes);
 
 
 // Schema creation
+createUserTable(); // Call this after setting up middlewares 
 const { createFoodTable } = require('./models/foodModel');
 createFoodTable();
 
