@@ -3,7 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 require('dotenv').config();
-const { createUserTable } = require('./models/userModel');
+const { createUserTable } = require('./Models/userModel');
 
 
 const app = express();
@@ -38,7 +38,7 @@ app.use('/user', userRoutes);
 
 
 // Schema creation
-const { createFoodTable } = require('./models/foodModel');
+const { createFoodTable } = require('./Models/foodModel');
 createFoodTable();
 
 
